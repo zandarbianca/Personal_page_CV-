@@ -1,4 +1,4 @@
-import "../App.css";
+// import "../App.css";
 import React from "react";
 import Link from '@material-ui/core/Link';
 import {SidebarData} from './SidebarData.jsx';
@@ -8,7 +8,6 @@ import {SidebarData} from './SidebarData.jsx';
 const Sidebar = () => {
     return (
         <>
-        
         <div className="Sidebar">
             <ul className="SidebarList">
             {SidebarData.map((val,key)=>{
@@ -16,15 +15,16 @@ const Sidebar = () => {
                 <li 
                 key={key} 
                 className="row"
-                id={window.location.pathname === val.link ? "active" : ""} 
+                id={window.location.pathname == val.link ? "active" : ""} 
                 onClick={() => {
                     window.location.pathname= val.link;
-
                     }}>
                     {" "}
                         <div id="icon">{val.icon}</div> 
-                        <div id="title"><a> {val.title} </a></div>
+                        <div id="title"> {val.title} </div>
                     </li>
+
+
                 );
                 
             })}
@@ -37,3 +37,5 @@ const Sidebar = () => {
 }
 
 export default Sidebar
+
+

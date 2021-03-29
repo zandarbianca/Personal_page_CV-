@@ -8,13 +8,16 @@ import GroupIcon from '@material-ui/icons/Group';
 import CodeIcon from '@material-ui/icons/Code';
 import TranslateIcon from '@material-ui/icons/Translate';
 import ContactMailIcon from '@material-ui/icons/ContactMail';
-
+import Avatar from '@material-ui/core/Avatar';
 
 export const SidebarData = [
+    <Avatar  />,
+    <Avatar  />,
     {
         title: "Home",
         icon: <HomeIcon />,
-        link: "#home"
+        link: "/home"
+        
     },
     {
         title: "Despre",
@@ -56,7 +59,8 @@ export const SidebarData = [
         title: "Contact",
         icon: <ContactMailIcon />,
         link: "/contact"
-    }
+    },
+    <Avatar  />,
 ]
 
 

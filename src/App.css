@@ -2,6 +2,7 @@
     width: 100vw;
     height: 100vh;
     /* background-color:coral; */
+    background-color: #4C4C4C;
 }
 
 body{
@@ -10,10 +11,12 @@ body{
 }
 
 .Sidebar{
-    height: 100%;
+    height: 120%;
     width: 250px;
-    background-color:steelblue;
+    background-color:#95818D;
 }
+
+
 
 .SidebarList{
     height: auto;
@@ -37,11 +40,11 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
 
 .SidebarList .row:hover {
     cursor: pointer;
-    background-color:rgb(174, 169, 206);
+    background-color:#6F5D68;
 }
 
 .SidebarList #active {
-    background-color: rgb(174, 169, 206);
+    background-color: #594A53;
 }
 
 .row #icon{
