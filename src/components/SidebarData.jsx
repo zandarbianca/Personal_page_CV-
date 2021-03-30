@@ -25,41 +25,28 @@ export const SidebarData = [
         link: "/despre"
         
     },
+
     {
-        title: "Educatie",
-        icon: <SchoolIcon />,
-        link: "/educatie"
-    },
-    {
-        title: "Experienta profesionala",
+        title: "Voluntariat",
         icon: <CardTravelIcon />,
-        link: "/educatieprofesionala"
+        link: "/Voluntariat"
     },
-    {
-        title: "Certificari",
-        icon: <AttachFileIcon />,
-        link: "/certificari"
-    },
+
     {
         title: "Hard Skills",
         icon: <CodeIcon />,
         link: "/hardskills"
     },
     {
-        title: "Soft Skills",
-        icon: <GroupIcon />,
-        link: "/softskills"
-    },
-    {
-        title: "Limbi Straine",
-        icon: <TranslateIcon />,
-        link: "/limbisraine"
-    },
-    {
         title: "Contact",
         icon: <ContactMailIcon />,
         link: "/contact"
     },
+    <Avatar  />,
+    <Avatar  />,
+    <Avatar  />,
+    <Avatar  />,
+    <Avatar  />,
     <Avatar  />,
 ]
 

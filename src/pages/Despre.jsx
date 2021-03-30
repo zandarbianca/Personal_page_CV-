@@ -1,19 +1,81 @@
 import { Typography } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
+import React from 'react';
+import Timeline from '@material-ui/lab/Timeline';
+import TimelineItem from '@material-ui/lab/TimelineItem';
+import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
+import TimelineConnector from '@material-ui/lab/TimelineConnector';
+import TimelineContent from '@material-ui/lab/TimelineContent';
+import TimelineDot from '@material-ui/lab/TimelineDot';
+import Paper from '@material-ui/core/Paper';
+import { brown } from '@material-ui/core/colors';
+import { makeStyles } from '@material-ui/core/styles';
+const useStyles = makeStyles((theme) => ({
+    root: {
+        flexGrow: 1,
+        overflow: 'hidden',
+        padding: theme.spacing(0, 3),
 
+    },
+    paper: {
+        maxWidth: 1000,
+        margin: `${theme.spacing(1)}px auto`,
+        padding: theme.spacing(2),
+        backgroundColor: brown[900],
+    }
+}));
 const Despre = () => {
+    const classes = useStyles();
     return (
         <div>
-            <h3>A DOUA SECTIUNE ---- DESPRE ----</h3>
-            <Grid container wrap="nowrap" spacing={2}>
-                <Grid item xs>
-                    <Typography>
-                        SECTIUNEA 2
-                        Text messaging, or texting, is the act of composing and sending electronic messages, typically consisting of alphabetic and numeric characters, between two or more users of mobile devices, desktops/laptops, or other type of compatible computer. Text messages may be sent over a cellular network, or may also be sent via an Internet connection.
-                        The term originally referred to messages sent using the Short Message Service (SMS). It has grown beyond alphanumeric text to include multimedia messages using the Multimedia Messaging Service (MMS) containing digital images, videos, and sound content, as well as ideograms known as emoji (happy faces, sad faces, and other icons), and instant messenger applications (usually the term is used when on mobile devices).
-                        Text messges are used for personal, family, business and social purposes. Governmental and non-governmental organizations use text messaging for communication between colleagues. In the 2010s, the sending of short informal messages became an accepted part of many cultures, as happened earlier with emailing.[1] This makes texting a quick and easy way to communicate with friends, family and colleagues, including in contexts where a call would be impolite or inappropriate (e.g., calling very late at night or when one knows the other person is busy with family or work activities). Like e-mail and voicemail and unlike calls (in which the caller hopes to speak directly with the recipient), texting does not require the caller and recipient to both be free at the same moment; this permits communication even between busy individuals. Text messages can also be used to interact with automated systems, for example, to order products or services from e-commerce websites, or to participate in online contests. Advertisers and service providers use direct text marketing to send messages to mobile users about promotions, payment due dates, and other notifications instead of using postal mail, email, or voicemail.
-                        Text messaging, or texting, is the act of composing and sending electronic messages, typically consisting of alphabetic and numeric characters, between two or more users of mobile devices, desktops/laptops, or other type of compatible computer. Text messages may be sent over a cellular network, or may also be sent via an Internet connection.
-                        The term originally referred to messages sent using the Short Message Service (SMS). It has grown beyond alphanumeric text to include multimedia messages using the Multimedia Messaging Service (MMS) containing digital images, videos, and sound content, as well as ideograms known as emoji (happy faces, sad faces, and other icons), and instant messenger applications (usually the term is used when on mobile devices).Text messages are used for personal, family, business and social purposes. Governmental and non-governmental organizations use text messaging for communication between colleagues. In the 2010s, the sending of short informal messages became an accepted part of many cultures, as happened earlier with emailing.[1] This makes texting a quick and easy way to communicate with friends, family and colleagues, including in contexts where a call would be impolite or inappropriate (e.g., calling very late at night or when one knows the other person is busy with family or work activities). Like e-mail and voicemail and unlike calls (in which the caller hopes to speak directly with the recipient), texting does not require the caller and recipient to both be free at the same moment; this permits communication even between busy individuals. Text messages can also be used to interact with automated systems, for example, to order products or services from e-commerce websites, or to participate in online contests. Advertisers and service providers use direct text marketing to send messages to mobile users about promotions, payment due dates, and other notifications instead of using postal mail, email, or voicemail.Text messages are used for personal, family, business and social purposes. Governmental and non-governmental organizations use text messaging for communication between colleagues. In the 2010s, the sending of short informal messages became an accepted part of many cultures, as happened earlier with emailing.[1] This makes texting a quick and easy way to communicate with friends, family and colleagues, including in contexts where a call would be impolite or inappropriate (e.g., calling very late at night or when one knows the other person is busy with family or work activities). Like e-mail and voicemail and unlike calls (in which the caller hopes to speak directly with the recipient), texting does not require the caller and recipient to both be free at the same moment; this permits communication even between busy individuals. Text messages can also be used to interact with automated systems, for example, to order products or services from e-commerce websites, or to participate in online contests. Advertisers and service providers use direct text marketing to send messages to mobile users about promotions, payment due dates, and other notifications instead of using postal mail, email, or voicemail.</Typography>
+            <Grid container spacing={3}>
+
+                <Grid item xs={6}>
+                    <Paper className={classes.paper}>
+                        <Typography variant="h3" align="left">
+                            <h3>Despre Mine</h3>
+                        </Typography>
+                        <br></br>
+                        <h3> Sunt o persoană deschisă, asimilez lucrurile foarte repede și consider că acest lucru reprezintă atuul meu. Îmi place să lucrez în echipă, să
+                        comunic și să ajut persoanele din jurul meu. Lucrez eficient sub presiune, dar prefer să îmi termin munca mai devreme de termenul
+                        stabilit. Îmi doresc ca pe viitor să lucrez în domeniul IT, să învăț și să descopăr cât mai multe lucruri din acest domeniu pentru a găsi ceea ce
+                        mi se potrivește pe deplin.</h3>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                    </Paper>
+                </Grid>
+                <Grid item xs={6}>
+                    <Paper className={classes.paper}>
+                        <Grid container wrap="nowrap" spacing={2}>
+                            <Grid item xs>
+                                <Timeline align='left'>
+                                    <TimelineItem >
+                                        <TimelineSeparator>
+                                            <TimelineDot />
+                                            <TimelineConnector />
+                                        </TimelineSeparator>
+                                        <TimelineContent>
+                                            <h3> Academia de Studii Economice din București</h3>
+                                            <h5> Facultatea de Cibernetică, Statistică și Informatică
+                                                  Economică, specializarea Informatică Economică</h5>
+                                        </TimelineContent>
+                                    </TimelineItem>
+                                    <TimelineItem>
+                                        <TimelineSeparator>
+                                            <TimelineDot />
+                                        </TimelineSeparator>
+                                        <TimelineContent>
+                                            <h3> Colegiul Național "Anastasescu", Roșiori de Vede, Teleorman</h3>
+                                            <h5>Profil Matematică - Infomatică</h5>
+                                        </TimelineContent>
+                                    </TimelineItem>
+                                </Timeline>
+                            </Grid>
+                        </Grid>
+
+                    </Paper>
                 </Grid>
             </Grid>
         </div>

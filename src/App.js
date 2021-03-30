@@ -24,28 +24,30 @@
 
 import './App.css';
 import Scrollspy from 'react-scrollspy'
-import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
+
 import { Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 import Home from './pages/Home.jsx';
 
 import Despre from './pages/Despre.jsx';
-
-import Educatie from './pages/Despre.jsx';
+import Voluntariat from './pages/Voluntariat.jsx';
+import Contact from './pages/Contact.jsx';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Sticky from 'react-stickynode';
-import HomeIcon from '@material-ui/icons/Home';
+
 import Sidebar from './components/Sidebar.jsx';
-import Avatar from '@material-ui/core/Avatar';
+
 import Particles from 'react-particles-js';
 import particlesConfig from './components/background.jsx';
-import { yellow } from '@material-ui/core/colors';
+
+
 import { brown } from '@material-ui/core/colors';
 import Box from "@material-ui/core/Box";
+import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
 
 
 
@@ -55,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     overflow: 'hidden',
     padding: theme.spacing(0, 3),
-    
+
   },
   paper: {
     maxWidth: 1000,
@@ -70,50 +72,49 @@ function App() {
   const classes = useStyles();
 
   return (
-    
+
 
     <div className="App">
-     
-   <Grid container spacing={24}>
+
+      <Grid container spacing={24}>
         <Grid xs={2}>
           <Sticky>
             <Sidebar />
-            </Sticky>
-       </Grid>
-      
-      <Grid xs={9} >
+          </Sticky>
+        </Grid>
 
-       <div style={{ position: 'absolute'}}>
-         <Particles height="100vh" width="100vw" params={particlesConfig}  />
-       </div>
- 
-        <Paper className={classes.paper} >
-        <Box p={1}>
-         <div>
-         <br></br>
-        
-         <br></br>
-         <br></br>
-         {/* <img src={Bibs}></img> */}
-         <br></br>
-         <br></br>
-         <Home />
-         <br></br>
-         <br></br>
-         
+        <Grid xs={9} >
 
+          <div style={{ position: 'absolute' }}>
+            <Particles height="100vh" width="100vw" params={particlesConfig} />
           </div>
-          </Box> </Paper>
-        
-         <Paper className={classes.paper}>
-           
-            <div> <Despre/> </div>
-            </Paper>
+          <Paper className={classes.paper} >
+            <Box p={1}>
+              <div>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <Home />
+                <br></br>
+                <br></br>
+              </div>
+            </Box> </Paper>
 
-         <Paper className={classes.paper}> <div> <Educatie /></div></Paper>
+          <Paper className={classes.paper}>
+            <div> <Despre /> </div>
+          </Paper>
 
-       
-      </Grid>
+          <Paper className={classes.paper}>
+            <div> <Voluntariat /> </div>
+          </Paper>
+
+          <Paper className={classes.paper}>
+            <div> <Contact /> </div>
+          </Paper>
+
+        </Grid>
       </Grid>
     </div>
   );
