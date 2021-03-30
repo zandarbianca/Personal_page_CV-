@@ -4,7 +4,14 @@ import { withStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import SendIcon from '@material-ui/icons/Send';
-
+import GitHubIcon from '@material-ui/icons/GitHub';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import Link from '@material-ui/core/Link';
+import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import Box from "@material-ui/core/Box";
 const styles = theme => ({
     container: {
         display: 'flex',
@@ -73,6 +80,51 @@ class FilledTextFields extends React.Component {
                     endIcon={<SendIcon>send</SendIcon>}>
                     Send
                 </Button>
+                <Grid
+            container
+            spacing={0}
+            align="center"
+            justify="center"
+            direction="column">
+            <Paper spacing={3} >
+
+
+                <Link href="https://www.linkedin.com/in/bianca-zand%C4%83r/" >
+                    <Button
+                        variant="contained"
+                        color="white"
+                        className={classes.button}
+                        startIcon={<LinkedInIcon color="primary" style={{ fontSize: 40 }} />}>
+                    </Button>
+                </Link>
+                <Link href="https://github.com/zandarbianca" >
+                    <Button
+                        variant="contained"
+                        color="white"
+                        className={classes.button}
+                        startIcon={<GitHubIcon style={{ fontSize: 40 }} />}>
+                    </Button>
+                </Link>
+                <Link href="https://www.facebook.com/zandarbianca.22/" >
+                    <Button
+                        variant="contained"
+                        color="white"
+                        className={classes.button}
+                        startIcon={<FacebookIcon color="primary" style={{ fontSize: 40 }} />}>
+                    </Button>
+                </Link>
+                <Link href="https://www.instagram.com/bianca.gabriela/" >
+                    <Button
+                        variant="contained"
+                        color="white"
+                        className={classes.button}
+                        startIcon={<InstagramIcon color="secondary" style={{ fontSize: 40 }} />}>
+                    </Button>
+                </Link>
+
+
+            </Paper>
+        </Grid>
             </form>
         );
     }

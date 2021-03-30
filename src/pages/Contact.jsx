@@ -39,51 +39,7 @@ const Contact = () => {
                <br></br>
             </Paper>
         </Grid>
-        <Grid
-            container
-            spacing={0}
-            align="center"
-            justify="center"
-            direction="column">
-            <Paper >
-
-
-                <Link href="https://www.linkedin.com/in/bianca-zand%C4%83r/" >
-                    <Button
-                        variant="contained"
-                        color="white"
-                        className={classes.button}
-                        startIcon={<LinkedInIcon color="primary" style={{ fontSize: 40 }} />}>
-                    </Button>
-                </Link>
-                <Link href="https://github.com/zandarbianca" >
-                    <Button
-                        variant="contained"
-                        color="white"
-                        className={classes.button}
-                        startIcon={<GitHubIcon style={{ fontSize: 40 }} />}>
-                    </Button>
-                </Link>
-                <Link href="https://www.facebook.com/zandarbianca.22/" >
-                    <Button
-                        variant="contained"
-                        color="white"
-                        className={classes.button}
-                        startIcon={<FacebookIcon color="primary" style={{ fontSize: 40 }} />}>
-                    </Button>
-                </Link>
-                <Link href="https://www.instagram.com/bianca.gabriela/" >
-                    <Button
-                        variant="contained"
-                        color="white"
-                        className={classes.button}
-                        startIcon={<InstagramIcon color="secondary" style={{ fontSize: 40 }} />}>
-                    </Button>
-                </Link>
-
-
-            </Paper>
-        </Grid>
+        
         <br></br>
     </Grid>
     )

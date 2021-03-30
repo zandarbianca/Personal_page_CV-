@@ -42,10 +42,34 @@ const Home = () => {
                     <br></br>
                     <br></br>
                     <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
                     <Typography align='center' className={classes.custom} >
                         <h1 color='black'> HI! I'M Bianca </h1>
                         <InsertEmoticonIcon />
                     </Typography>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
                     <br></br>
                     <br></br>
                     <br></br>

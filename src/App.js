@@ -14,7 +14,7 @@ import Skills from './pages/Skills.jsx';
 import Sticky from 'react-stickynode';
 
 import Sidebar from './components/Sidebar.jsx';
-
+import { Link, Element } from 'react-scroll'
 import Particles from 'react-particles-js';
 import particlesConfig from './components/background.jsx';
 
@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 1000,
     margin: `${theme.spacing(1)}px auto`,
     padding: theme.spacing(2),
-     backgroundColor: '#7CB9DF',
+    backgroundColor: '#7CB9DF',
     // backgroundImage: `url(${Bibs})`,
   }, pagina: {
     width: "max-width",
@@ -72,7 +72,7 @@ function App() {
             {/* <div style={{ position: 'static' }}>
             <Particles height="100vh" width="100vw" params={particlesConfig} />
           </div> */}
-            <Paper className={classes.paper} >
+            {/* <Paper className={classes.paper} >
               <Box p={1}>
                 <div>
                   <br></br>
@@ -84,9 +84,9 @@ function App() {
                   <br></br>
                   <br></br>
                 </div>
-              </Box> </Paper>
+              </Box> </Paper> */}
 
-            <Paper className={classes.paper}>
+            {/* <Paper className={classes.paper}>
               <div> <Despre /> </div>
             </Paper>
 
@@ -100,8 +100,22 @@ function App() {
 
             <Paper className={classes.paper}>
               <div> <Skills /> </div>
-            </Paper>
-
+            </Paper> */}
+            <Element name="test1" className="element">
+              <Home />
+            </Element>
+            <Element name="test2" className="element">
+              <Despre />
+            </Element>
+            <Element name="test3" className="element">
+              <Voluntariat />
+            </Element>
+            <Element name="test4" className="element">
+              <Skills />
+            </Element>
+            <Element name="test5" className="element">
+              <Contact />
+            </Element>
           </Grid>
         </Grid>
       </Paper>
