@@ -23,22 +23,36 @@ const Home = () => {
             {/* <Typography align='center'> Home </Typography> */}
 
             <Grid container wrap="nowrap" spacing={2} >
-                <Grid item xs={12} >
+                <Grid item xs={12} spacing={0}
+    align="center"
+    justify="center"
+    direction="column">
                     <div>
-                        
+                    {/* <Box mx="auto" bgcolor="background.paper" p={2}> */}
                             <ReactRoundedImage
                                 image={Bibs}
                                 roundedColor="#321124"
                                 imageWidth="380"
                                 imageHeight="300"
                                 roundedSize="13"
-                                alignItems="center"
+                                alignItems="center"></ReactRoundedImage>
+                                 {/* </Box> */}
 
-                   az zz  CV 
+                   </div>
+                   <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
                     <Typography align='center' className={classes.custom} >
                         <h1 color='white'> HI! I'M Bianca </h1>
                         <InsertEmoticonIcon />
                     </Typography>
+                    <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+      
                 </Grid>
             </Grid>
         </div>
