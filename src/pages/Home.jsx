@@ -9,7 +9,7 @@ import ReactRoundedImage from "react-rounded-image";
 import Box from "@material-ui/core/Box";
 import Particles from 'react-particles-js';
 import particlesConfig from '../components/background.jsx';
-import Bibs from '../c.jpeg';
+import Bibs from '../img.jpeg';
 const useStyles = makeStyles({
     custom: {
         color: "#EDE5A6",
@@ -33,11 +33,12 @@ const Home = () => {
     return (
         <div>
             {/* <Grid container wrap="nowrap" spacing={2} > */}
-                <Paper spacing={0}
+                <Paper spacing={0} 
                     align="center"
                     justify="center"
                     direction="column"
-                    lg='auto'>
+                    lg='auto'
+                    className={classes.pagina}>
                     <br></br>
                     <br></br>
                     <br></br>
@@ -58,10 +59,18 @@ const Home = () => {
                     <br></br>
                     <br></br>
                     <br></br>
-                    <Typography align='center' className={classes.custom} >
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    {/* <Typography align='center' className={classes.custom} >
                         <h1 color='black'> HI! I'M Bianca </h1>
                         <InsertEmoticonIcon />
-                    </Typography>
+                    </Typography> */}
                     <br></br>
                     <br></br>
                     <br></br>

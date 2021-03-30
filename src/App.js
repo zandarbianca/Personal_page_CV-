@@ -7,7 +7,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Home from './pages/Home.jsx';
 
 import Despre from './pages/Despre.jsx';
-import Voluntariat from './pages/Voluntariat.jsx';
+
 import Contact from './pages/Contact.jsx';
 import Skills from './pages/Skills.jsx';
 
@@ -56,8 +56,6 @@ function App() {
   const classes = useStyles();
 
   return (
-
-
     <div className="App">
       <Paper className={classes.pagina}>
         <Grid container spacing={24}>
@@ -66,50 +64,16 @@ function App() {
               <Sidebar />
             </Sticky>
           </Grid>
-
           <Grid xs={9} >
-
-            {/* <div style={{ position: 'static' }}>
-            <Particles height="100vh" width="100vw" params={particlesConfig} />
-          </div> */}
-            {/* <Paper className={classes.paper} >
-              <Box p={1}>
-                <div>
-                  <br></br>
-                  <br></br>
-                  <br></br>
-                  <br></br>
-                  <br></br>
-                  <Home />
-                  <br></br>
-                  <br></br>
-                </div>
-              </Box> </Paper> */}
-
-            {/* <Paper className={classes.paper}>
-              <div> <Despre /> </div>
-            </Paper>
-
-            <Paper className={classes.paper}>
-              <div> <Voluntariat /> </div>
-            </Paper>
-
-            <Paper className={classes.paper}>
-              <div> <Contact /> </div>
-            </Paper>
-
-            <Paper className={classes.paper}>
-              <div> <Skills /> </div>
-            </Paper> */}
             <Element name="test1" className="element">
               <Home />
             </Element>
             <Element name="test2" className="element">
               <Despre />
             </Element>
-            <Element name="test3" className="element">
+            {/* <Element name="test3" className="element">
               <Voluntariat />
-            </Element>
+            </Element> */}
             <Element name="test4" className="element">
               <Skills />
             </Element>

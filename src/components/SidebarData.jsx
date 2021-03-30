@@ -20,11 +20,11 @@ export const SidebarData = [
         
     },
 
-    {
-        title: "Voluntariat",
-        icon: <CardTravelIcon />,
-        link: "/Voluntariat"
-    },
+    // {
+    //     title: "Voluntariat",
+    //     icon: <CardTravelIcon />,
+    //     link: "/Voluntariat"
+    // },
 
     {
         title: "Hard Skills",

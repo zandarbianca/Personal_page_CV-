@@ -58,9 +58,9 @@ const Sidebar = () => {
         <Link activeClass="active" to="test2" spy={true} smooth={true} offset={50} duration={500} >
         <div id="icon" className="row">{_SidebarData[1].icon  } {_SidebarData[1].title  } </div> 
         </Link>
-        <Link activeClass="active" to="test3" spy={true} smooth={true} offset={50} duration={500} >
+        {/* <Link activeClass="active" to="test3" spy={true} smooth={true} offset={50} duration={500} >
         <div id="icon" className="row">{_SidebarData[2].icon  } {_SidebarData[2].title  } </div> 
-        </Link>
+        </Link> */}
         <Link activeClass="active" to="test4" spy={true} smooth={true} offset={50} duration={500} >
         <div id="icon" className="row">{_SidebarData[3].icon  } {_SidebarData[3].title  } </div> 
         </Link>

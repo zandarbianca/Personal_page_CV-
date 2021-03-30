@@ -27,6 +27,7 @@ const styles = theme => ({
     menu: {
         width: 200,
     },
+
 });
 
 
@@ -41,6 +42,7 @@ class FilledTextFields extends React.Component {
         const { classes } = this.props;
         return (
             <form className={classes.container} noValidate autoComplete="off">
+                
                 <TextField
                     id="filled-name"
                     label="Name"
@@ -73,58 +75,59 @@ class FilledTextFields extends React.Component {
                     margin="normal"
                     variant="filled"
                 />
+                <Grid container justify="right">
+                    <Grid item>
                 <Button
                     variant="contained"
                     color="primary"
                     className={classes.button}
                     endIcon={<SendIcon>send</SendIcon>}>
                     Send
-                </Button>
+                </Button></Grid></Grid>
                 <Grid
-            container
-            spacing={0}
-            align="center"
-            justify="center"
-            direction="column">
-            <Paper spacing={3} >
+                    container
+                    spacing={0}
+                    align="center"
+                    justify="center"
+                    direction="column">
+                    <Paper spacing={1} elevation={0} >
+                        <Grid container style={{ gap: 10 }} justify="center">
+                            <Link href="https://www.linkedin.com/in/bianca-zand%C4%83r/" >
+                                <Button
+                                    variant="contained"
+                                    color="white"
+                                    className={classes.button}
+                                    startIcon={<LinkedInIcon color="primary" style={{ fontSize: 40 }} />}>
+                                </Button>
+                            </Link>
+                            <Link href="https://github.com/zandarbianca" >
+                                <Button
+                                    variant="contained"
+                                    color="white"
+                                    className={classes.button}
+                                    startIcon={<GitHubIcon style={{ fontSize: 40 }} />}>
+                                </Button>
+                            </Link>
+                            <Link href="https://www.facebook.com/zandarbianca.22/" >
+                                <Button
+                                    variant="contained"
+                                    color="white"
+                                    className={classes.button}
+                                    startIcon={<FacebookIcon color="primary" style={{ fontSize: 40 }} />}>
+                                </Button>
+                            </Link>
+                            <Link href="https://www.instagram.com/bianca.gabriela/" >
+                                <Button
+                                    variant="contained"
+                                    color="white"
+                                    className={classes.button}
+                                    startIcon={<InstagramIcon color="secondary" style={{ fontSize: 40 }} />}>
+                                </Button>
+                            </Link>
 
-
-                <Link href="https://www.linkedin.com/in/bianca-zand%C4%83r/" >
-                    <Button
-                        variant="contained"
-                        color="white"
-                        className={classes.button}
-                        startIcon={<LinkedInIcon color="primary" style={{ fontSize: 40 }} />}>
-                    </Button>
-                </Link>
-                <Link href="https://github.com/zandarbianca" >
-                    <Button
-                        variant="contained"
-                        color="white"
-                        className={classes.button}
-                        startIcon={<GitHubIcon style={{ fontSize: 40 }} />}>
-                    </Button>
-                </Link>
-                <Link href="https://www.facebook.com/zandarbianca.22/" >
-                    <Button
-                        variant="contained"
-                        color="white"
-                        className={classes.button}
-                        startIcon={<FacebookIcon color="primary" style={{ fontSize: 40 }} />}>
-                    </Button>
-                </Link>
-                <Link href="https://www.instagram.com/bianca.gabriela/" >
-                    <Button
-                        variant="contained"
-                        color="white"
-                        className={classes.button}
-                        startIcon={<InstagramIcon color="secondary" style={{ fontSize: 40 }} />}>
-                    </Button>
-                </Link>
-
-
-            </Paper>
-        </Grid>
+                        </Grid>
+                    </Paper>
+                </Grid>
             </form>
         );
     }
