@@ -3,14 +3,26 @@ import { Typography } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 import { makeStyles } from '@material-ui/core/styles';
-import Bibs from '../Bibs.jpg';
+import Paper from '@material-ui/core/Paper';
+
 import ReactRoundedImage from "react-rounded-image";
 import Box from "@material-ui/core/Box";
+import Particles from 'react-particles-js';
+import particlesConfig from '../components/background.jsx';
+import Bibs from '../c.jpeg';
 const useStyles = makeStyles({
     custom: {
         color: "#EDE5A6",
         fontWeight: "bold"
-    }
+    },
+    pagina:{
+        width: "max-width",
+        backgroundImage: `url(${Bibs})`,
+        backgroundSize: "cover",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+      },
 });
 
 
@@ -20,31 +32,18 @@ const Home = () => {
 
     return (
         <div>
-            {/* <Typography align='center'> Home </Typography> */}
-
-            <Grid container wrap="nowrap" spacing={2} >
-                <Grid item xs={12} spacing={0}
+            {/* <Grid container wrap="nowrap" spacing={2} > */}
+                <Paper spacing={0}
                     align="center"
                     justify="center"
-                    direction="column">
-                    <div>
-                        {/* <Box mx="auto" bgcolor="background.paper" p={2}> */}
-                        <ReactRoundedImage
-                            image={Bibs}
-                            roundedColor="#321124"
-                            imageWidth="380"
-                            imageHeight="300"
-                            roundedSize="13"
-                            alignItems="center"></ReactRoundedImage>
-                        {/* </Box> */}
-
-                    </div>
+                    direction="column"
+                    lg='auto'>
                     <br></br>
                     <br></br>
                     <br></br>
                     <br></br>
                     <Typography align='center' className={classes.custom} >
-                        <h1 color='white'> HI! I'M Bianca </h1>
+                        <h1 color='black'> HI! I'M Bianca </h1>
                         <InsertEmoticonIcon />
                     </Typography>
                     <br></br>
@@ -53,8 +52,8 @@ const Home = () => {
                     <br></br>
                     <br></br>
 
-                </Grid>
-            </Grid>
+                </Paper>
+            {/* </Grid> */}
         </div>
     )
 }

@@ -11,8 +11,7 @@ import ContactMailIcon from '@material-ui/icons/ContactMail';
 import Avatar from '@material-ui/core/Avatar';
 
 export const SidebarData = [
-    <Avatar  />,
-    <Avatar  />,
+
     {
         title: "Home",
         icon: <HomeIcon />,
@@ -42,12 +41,7 @@ export const SidebarData = [
         icon: <ContactMailIcon />,
         link: "/contact"
     },
-    <Avatar  />,
-    <Avatar  />,
-    <Avatar  />,
-    <Avatar  />,
-    <Avatar  />,
-    <Avatar  />,
+
 ]
 
 

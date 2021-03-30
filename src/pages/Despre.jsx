@@ -10,6 +10,9 @@ import TimelineDot from '@material-ui/lab/TimelineDot';
 import Paper from '@material-ui/core/Paper';
 import { brown } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
+import Particles from 'react-particles-js';
+import particlesConfig from '../components/background.jsx';
+import Bibs from '../c.jpeg';
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
@@ -22,14 +25,18 @@ const useStyles = makeStyles((theme) => ({
         margin: `${theme.spacing(1)}px auto`,
         padding: theme.spacing(2),
         backgroundColor: brown[900],
-    }
+        
+    },
+    
 }));
 const Despre = () => {
     const classes = useStyles();
     return (
         <div>
             <Grid container spacing={3}>
-
+            {/* <div style={{ position: 'absolute' }}>
+            <Particles height="100vh" width="100vw" params={particlesConfig} />
+          </div> */}
                 <Grid item xs={6}>
                     <Paper className={classes.paper}>
                         <Typography variant="h3" align="left">
@@ -40,6 +47,15 @@ const Despre = () => {
                         comunic și să ajut persoanele din jurul meu. Lucrez eficient sub presiune, dar prefer să îmi termin munca mai devreme de termenul
                         stabilit. Îmi doresc ca pe viitor să lucrez în domeniul IT, să învăț și să descopăr cât mai multe lucruri din acest domeniu pentru a găsi ceea ce
                         mi se potrivește pe deplin.</h3>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
                         <br></br>
                         <br></br>
                         <br></br>

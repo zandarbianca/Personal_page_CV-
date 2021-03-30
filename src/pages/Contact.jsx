@@ -11,10 +11,12 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import ContactForm from '../pages/ContactForm.jsx'
 import ContactHeader from '../pages/ContactHeader.jsx'
+
 const useStyles = makeStyles((theme) => ({
     button: {
         margin: theme.spacing(1),
     },
+    
 }));
 const useStyles2 = makeStyles(theme => ({
     pageContent: {
@@ -24,14 +26,17 @@ const useStyles2 = makeStyles(theme => ({
 }))
 
 
+
 const Contact = () => {
     const classes = useStyles();
     const classes2 = useStyles2();
-    return (<Grid>
+    return (
+    <Grid>
         <Grid item xs={12}>
             <Paper className={classes2.pageContent}>
                 <ContactHeader />
                 <ContactForm />
+               <br></br>
             </Paper>
         </Grid>
         <Grid
@@ -79,6 +84,7 @@ const Contact = () => {
 
             </Paper>
         </Grid>
+        <br></br>
     </Grid>
     )
 }
