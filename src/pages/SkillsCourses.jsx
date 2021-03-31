@@ -5,10 +5,8 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
-import ImageIcon from '@material-ui/icons/Image';
-import WorkIcon from '@material-ui/icons/Work';
-import BeachAccessIcon from '@material-ui/icons/BeachAccess';
 import Divider from '@material-ui/core/Divider';
+import AttachFileIcon from '@material-ui/icons/AttachFile';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -26,7 +24,7 @@ export default function InsetDividers() {
       <ListItem>
         <ListItemAvatar>
           <Avatar>
-            <ImageIcon />
+            <AttachFileIcon />
           </Avatar>
         </ListItemAvatar>
         <ListItemText primary="Database Design and Programming with SQL - Oracle Academy"  />
@@ -37,12 +35,10 @@ export default function InsetDividers() {
       <ListItem>
         <ListItemAvatar>
           <Avatar>
-            <WorkIcon />
+            <AttachFileIcon />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="Data Structures and Algorithms,Master the Coding Interview -
-Udemy
-"/>
+        <ListItemText primary="Data Structures and Algorithms,Master the Coding Interview - Udemy"/>
       </ListItem>
 
       <Divider variant="inset" component="li" />
@@ -50,7 +46,7 @@ Udemy
       <ListItem>
         <ListItemAvatar>
           <Avatar>
-            <BeachAccessIcon />
+            <AttachFileIcon />
           </Avatar>
         </ListItemAvatar>
         <ListItemText primary="C for Everyone: Programming Fundamentals - Coursera"  />
@@ -61,7 +57,7 @@ Udemy
       <ListItem>
         <ListItemAvatar>
           <Avatar>
-            <BeachAccessIcon />
+            <AttachFileIcon />
           </Avatar>
         </ListItemAvatar>
         <ListItemText primary="ECDL Profile Ceritificate"  />

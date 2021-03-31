@@ -11,7 +11,6 @@ import Link from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import Box from "@material-ui/core/Box";
 const styles = theme => ({
     container: {
         display: 'flex',

@@ -1,4 +1,4 @@
-import { Typography } from '@material-ui/core';
+import { Card, Typography } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import React from 'react';
 import Timeline from '@material-ui/lab/Timeline';
@@ -28,6 +28,9 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: brown[900],
 
     },
+    margin:{
+        margin: `${theme.spacing(1)}px auto`,
+    }
 
 }));
 const Despre = () => {
@@ -40,7 +43,7 @@ const Despre = () => {
           </div> */}
                 <Grid item xs={6}>
                     <Paper>
-                        <Typography variant="h3" align="left">
+                        <Typography variant="h3" align="center">
                             <h6>Despre Mine</h6>
                         </Typography>
                         <br></br>
@@ -86,18 +89,17 @@ const Despre = () => {
 
                 </Grid>
                 <Grid item xs={6} >
-
-
                     <Paper>
-                        <Typography variant="h3" align="left">
-                            <h6> Fundraiser în cadrul SiSC </h6>
-                            <Typography variant="body1" align="left">   Sindicatul Studenților din Cibernetică</Typography>
+                        <Typography variant="h3" align="center">
+                            <h6 > Voluntariat </h6>
                         </Typography>
 
+   <Typography  align="left">
+    <h3> 
+    &nbsp; Fundraiser în cadrul SiSC  Sindicatul Studenților din Cibernetică </h3>
+    </Typography>
 
-
-
-                        <Typography variant="h5" align="left">
+                        <Typography variant="h5" align="left" >
                             Am participat la organizarea mai multor proiecte în care mi-am
                             dezvoltat foarte multe dintre soft skill-uri, cum ar fi:
                             adaptabilitatea, munca în echipă, comunicarea eficientă,
