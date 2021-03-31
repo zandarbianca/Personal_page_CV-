@@ -1,6 +1,6 @@
 import React from 'react'
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import Box from "@material-ui/core/Box";
+
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
@@ -31,8 +31,12 @@ const Contact = () => {
     const classes = useStyles();
     const classes2 = useStyles2();
     return (
+      
     <Grid>
+  <br></br>
+  <br></br>
         <Grid item xs={12}>
+            
             <Paper className={classes2.pageContent}>
                 <ContactHeader />
                 <ContactForm />

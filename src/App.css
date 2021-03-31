@@ -56,3 +56,7 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
 .row #title{
     flex: 70%;
 }
+
+.timeline .MuiTimelineItem-missingOppositeContent:before{
+display : none;
+}

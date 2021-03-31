@@ -23,7 +23,7 @@ import { brown } from '@material-ui/core/colors';
 import Box from "@material-ui/core/Box";
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
-import Bibs from './c.jpeg';
+import Bibs from './img.jpeg';
 
 
 
@@ -71,9 +71,6 @@ function App() {
             <Element name="test2" className="element">
               <Despre />
             </Element>
-            {/* <Element name="test3" className="element">
-              <Voluntariat />
-            </Element> */}
             <Element name="test4" className="element">
               <Skills />
             </Element>

@@ -4,12 +4,12 @@ import Grid from '@material-ui/core/Grid';
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
-
 import ReactRoundedImage from "react-rounded-image";
 import Box from "@material-ui/core/Box";
 import Particles from 'react-particles-js';
 import particlesConfig from '../components/background.jsx';
 import Bibs from '../img.jpeg';
+
 const useStyles = makeStyles({
     custom: {
         color: "#EDE5A6",
