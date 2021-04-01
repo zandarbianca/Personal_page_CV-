@@ -27,40 +27,34 @@ export default function InsetDividers() {
             <AttachFileIcon />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="Database Design and Programming with SQL - Oracle Academy"  />
+        <ListItemText primary="Database Design and Programming with SQL - Oracle Academy" />
       </ListItem>
-
       <Divider variant="inset" component="li" />
-
       <ListItem>
         <ListItemAvatar>
           <Avatar>
             <AttachFileIcon />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="Data Structures and Algorithms,Master the Coding Interview - Udemy"/>
+        <ListItemText primary="Data Structures and Algorithms,Master the Coding Interview - Udemy" />
       </ListItem>
-
       <Divider variant="inset" component="li" />
-
       <ListItem>
         <ListItemAvatar>
           <Avatar>
             <AttachFileIcon />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="C for Everyone: Programming Fundamentals - Coursera"  />
+        <ListItemText primary="C for Everyone: Programming Fundamentals - Coursera" />
       </ListItem>
-
       <Divider variant="inset" component="li" />
-
       <ListItem>
         <ListItemAvatar>
           <Avatar>
             <AttachFileIcon />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="ECDL Profile Ceritificate"  />
+        <ListItemText primary="ECDL Profile Ceritificate" />
       </ListItem>
     </List>
   );

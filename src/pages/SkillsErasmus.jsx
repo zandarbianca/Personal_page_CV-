@@ -4,10 +4,9 @@ import { Typography } from '@material-ui/core';
 
 const SkillsErasmus = () => {
     return (
-        <div>
-<br></br>
-              <Typography  align="center">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div><br></br>
+            <Typography align="center">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 În cadrul proiectului, am lucrat în poziția de technical assistant,
                 în compania e-sistemas.net din Granada, Spania, în urma căreia
                 am realizat un site împreuna cu o colegă de echipă, într-un timp
@@ -16,10 +15,7 @@ const SkillsErasmus = () => {
                 Cu ajutorul proiectului, mi-am dezvoltat nenumărate abilități
                 cum ar fi: munca în echipă, realizarea task-urile până la un
                 deadline stabilit, asimilarea rapidă a cunoștințelor, abilitățile de
-                leadership și totodată limba engleză.
-   
-        </Typography>
-   
+                leadership și totodată limba engleză.</Typography>
         </div>
     )
 }

@@ -11,6 +11,7 @@ import Link from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+
 const styles = theme => ({
     container: {
         display: 'flex',
@@ -29,19 +30,16 @@ const styles = theme => ({
 
 });
 
-
 class FilledTextFields extends React.Component {
     handleChange = name => event => {
         this.setState({
             [name]: event.target.value,
         });
     };
-
     render() {
         const { classes } = this.props;
         return (
             <form className={classes.container} noValidate autoComplete="off">
-                
                 <TextField
                     id="filled-name"
                     label="Name"
@@ -75,14 +73,15 @@ class FilledTextFields extends React.Component {
                     variant="filled"
                 />
                 <Grid container justify="right">
-                    <Grid item>
-                <Button
-                    variant="contained"
-                    color="primary"
-                    className={classes.button}
-                    endIcon={<SendIcon>send</SendIcon>}>
-                    Send
-                </Button></Grid></Grid>
+                    <Grid container justify='flex-end' >
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            className={classes.button}
+                            endIcon={<SendIcon>send</SendIcon>}>
+                            Send
+                </Button>
+                    </Grid></Grid>
                 <Grid
                     container
                     spacing={0}
@@ -123,7 +122,6 @@ class FilledTextFields extends React.Component {
                                     startIcon={<InstagramIcon color="secondary" style={{ fontSize: 40 }} />}>
                                 </Button>
                             </Link>
-
                         </Grid>
                     </Paper>
                 </Grid>

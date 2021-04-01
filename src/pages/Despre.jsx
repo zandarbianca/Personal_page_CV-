@@ -1,4 +1,4 @@
-import { Card, Typography } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import React from 'react';
 import Timeline from '@material-ui/lab/Timeline';
@@ -12,9 +12,9 @@ import { brown } from '@material-ui/core/colors';
 import { makeStyles } from '@material-ui/core/styles';
 import Particles from 'react-particles-js';
 import particlesConfig from '../components/background.jsx';
-import Bibs from '../c.jpeg';
 import '../App.css';
 import Img from '../imgSkill.jpg';
+
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
@@ -36,14 +36,14 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: '30%',
         fontFamily: 'MMA Champ',
     },
-    pagina:{
+    pagina: {
         width: "max-width",
         backgroundImage: `url(${Img})`,
         backgroundSize: "cover",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-      },
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+    },
 
 }));
 const Despre = () => {
@@ -52,11 +52,10 @@ const Despre = () => {
         <div>
             <br></br><br></br>
             <Grid container spacing={3}>
-                
                 <Grid item xs={6} ><br></br>
-                <div style={{ position: 'absolute' }}>
-            <Particles height="100vh" width="70vw" params={particlesConfig} />
-          </div>
+                    <div style={{ position: 'absolute' }}>
+                        <Particles height="100vh" width="70vw" params={particlesConfig} />
+                    </div>
                     <Paper className={classes.pagina}>
                         <Typography variant="h3" align="center">
                             <h6>Despre Mine</h6>
@@ -68,9 +67,7 @@ const Despre = () => {
                             stabilit. Îmi doresc ca pe viitor să lucrez în domeniul IT, să învăț și să descopăr cât mai multe lucruri din acest domeniu pentru a găsi ceea ce
                         mi se potrivește pe deplin.</h3>
                         </Typography>
-                        
-                        <br></br>
-                        <br></br>
+                        <br></br><br></br>
                         <Grid item >
                             <Timeline className="timeline">
                                 <TimelineItem >
@@ -78,7 +75,6 @@ const Despre = () => {
                                         <br></br>
                                         <TimelineDot />
                                         <TimelineConnector />
-
                                     </TimelineSeparator>
                                     <TimelineContent >
                                         <h3> Academia de Studii Economice din București</h3>
@@ -86,10 +82,8 @@ const Despre = () => {
                                                   Economică, specializarea Informatică Economică</h5>
                                     </TimelineContent>
                                 </TimelineItem>
-
                                 <TimelineItem>
                                     <TimelineSeparator>
-
                                         <br></br>
                                         <TimelineDot />
                                     </TimelineSeparator>
@@ -102,8 +96,6 @@ const Despre = () => {
                         </Grid>
                     </Paper>
 
-
-
                 </Grid>
                 <Grid item xs={6} >
                     <br></br>
@@ -111,15 +103,14 @@ const Despre = () => {
                         <Typography variant="h3" align="center">
                             <h6 > Voluntariat </h6>
                         </Typography>
-
                         <Typography align="center">
                             <h3>
-                                 Fundraiser în cadrul SiSC - Sindicatul Studenților din Cibernetică </h3>
+                                Fundraiser în cadrul SiSC - Sindicatul Studenților din Cibernetică </h3>
                         </Typography>
                         <br></br>
                         <Typography align="center">
-<br></br>
-<h3> Am participat la organizarea mai multor proiecte în care mi-am
+                            <br></br>
+                            <h3> Am participat la organizarea mai multor proiecte în care mi-am
                             dezvoltat foarte multe dintre soft skill-uri, cum ar fi:
                             adaptabilitatea, munca în echipă, comunicarea eficientă,
                             managementul timpului, creativitatea și multe altele.
@@ -130,17 +121,8 @@ const Despre = () => {
                             Fiecare proiect a avut o influență pozitivă asupra mea, în timpul
                             acestora am primit și oferit feedback în foarte multe situații,
                             feedback care s-a dovedit a fi constructiv, atât pentru mine, cât
-                            și pentru colegii mei.</h3>
-    </Typography>
-   
-
-                        <br></br>
-                        <br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-
+                            și pentru colegii mei.</h3></Typography>
+                        <br></br><br></br><br></br><br></br><br></br><br></br>
                     </Paper>
                 </Grid>
             </Grid>

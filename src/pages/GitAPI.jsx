@@ -11,10 +11,11 @@ import Grid from '@material-ui/core/Grid';
 import Link from '@material-ui/core/Link';
 import Button from '@material-ui/core/Button';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+
 const useStyles = makeStyles((theme) => ({
     root: {
         width: '100%',
-        // maxWidth: '36ch',
+
         backgroundColor: theme.palette.background.paper,
     },
     inline: {
@@ -27,7 +28,6 @@ export default function GitHubUser() {
     const [repos, setRepos] = useState([]);
 
     const classes = useStyles();
-
     useEffect(() => {
         fetch('https://api.github.com/users/' + userName + '/repos?sort=created')
             .then(response => response.json())
@@ -49,39 +49,24 @@ export default function GitHubUser() {
                             </Typography>
                             {repo.description}
                         </React.Fragment>} />
-                </ListItem>
+            </ListItem>
             <Divider variant="inset" component="li" />
         </Fragment>
     );
 
     return (
         <Fragment>
-<br></br>
-
-            <ListItemAvatar align="center">
-                <Avatar style={{ width: 80, height: 80 }} />
-            </ListItemAvatar>
-    
-            {/* <Typography variant="body1" align="center" >
-                GitHub Repository
-            </Typography> */}
-
+            <br></br><br></br>
             <List className={classes.root}>{listItems}</List>
-
-            <Link href="https://github.com/zandarbianca/pagina_personala" >
-                <Button
-                    variant="contained"
-                    color="secondary"
-                    style={{ display: 'flex', justifyContent: 'right' }}
-                    endIcon={<ArrowForwardIcon>Go to read</ArrowForwardIcon>}>
-                    Go to read
-            </Button>
-            </Link>
-
+            <Grid container justify='flex-end' >
+                <Link href="https://github.com/zandarbianca/pagina_personala" >
+                    <Button
+                        variant="contained"
+                        color="secondary"
+                        endIcon={<ArrowForwardIcon>Go to read</ArrowForwardIcon>}>
+                        Go to read</Button>
+                </Link>
+            </Grid>
         </Fragment>
     );
 }
-
-                {/* <ListItemAvatar>
-                    <Avatar alt={repo.owner.login} src={repo.owner.avatar_url} />
-                </ListItemAvatar> */}

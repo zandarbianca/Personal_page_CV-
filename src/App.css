@@ -1,8 +1,6 @@
 .App{
     width: 100vw;
     height: 100vh;
-    /* background-color:coral; */
-    /* background-color: #4C4C4C; */
 }
 
 body{
@@ -16,17 +14,15 @@ body{
     background-color:#95818D;
 }
 
-
-
 .SidebarList{
     height: auto;
     padding: 0;
     width: 100%;
 }
+
 .SidebarList .row{
 width: 100%;
 height: 60px;
-/* border:  1px solid black; */
 list-style-type: none;
 margin: 0%;
 display: flex;
@@ -35,7 +31,6 @@ color:white;
 justify-content: center;
 align-items: center;
 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
 }
 
 .SidebarList .row:hover {
@@ -58,6 +53,6 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
 }
 
 .timeline .MuiTimelineItem-missingOppositeContent:before{
-display : none;
+    display : none;
 }
 

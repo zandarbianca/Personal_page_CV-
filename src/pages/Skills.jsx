@@ -47,10 +47,7 @@ export default function FullWidthGrid() {
 
   return (
     <div >
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+      <br></br><br></br><br></br><br></br>
       <Grid container style={{ gap: 70 }} justify="center">
       <div style={{ position: 'absolute' }}>
             <Particles height="100vh" width="70vw" params={particlesConfig} />
@@ -61,31 +58,26 @@ export default function FullWidthGrid() {
             <SkillsHard />
           </div>
         </Tilt>
-
         <Tilt item xs={12} sm={6}>
           <div style={{ height: '300px', backgroundColor: 'white',width:'600px' }}>
             <h2 align="center">Erasmus+</h2>
             <SkillsErasmus />
           </div>
         </Tilt>
- 
         <Tilt item xs={12} sm={6} >
           <div style={{ height: '300px', backgroundColor: 'white',width:'600px'}}>
             <h2 align="center">Courses and Licenses</h2>
             <CoursesSkills />
-
           </div>
         </Tilt>
-
         <Tilt item xs={12} sm={6}>
           <div style={{ height: '300px', backgroundColor: 'white', width:'600px'}}>
+            <br></br>
             <h2 align="center"> GitHub Repository</h2>
               <GitAPI />
           </div>
         </Tilt>
-
       </Grid>
-
     </div>
   );
 }
