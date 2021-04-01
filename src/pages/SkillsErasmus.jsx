@@ -5,9 +5,9 @@ import { Typography } from '@material-ui/core';
 const SkillsErasmus = () => {
     return (
         <div>
-
-              <Typography  color="textSecondary">
-
+<br></br>
+              <Typography  align="center">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 În cadrul proiectului, am lucrat în poziția de technical assistant,
                 în compania e-sistemas.net din Granada, Spania, în urma căreia
                 am realizat un site împreuna cu o colegă de echipă, într-un timp

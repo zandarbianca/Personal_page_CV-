@@ -3,7 +3,7 @@ import Scrollspy from 'react-scrollspy'
 
 
 import { makeStyles } from '@material-ui/core/styles';
-
+import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import Home from './pages/Home.jsx';
 
 import Despre from './pages/Despre.jsx';
@@ -54,8 +54,13 @@ const useStyles = makeStyles((theme) => ({
 
 function App() {
   const classes = useStyles();
-
+  const theme = createMuiTheme({
+    typography: {
+      fontFamily: ["Open Sans", "sans-serif"].join(","),
+    },
+  });
   return (
+    <ThemeProvider theme={theme}>
     <div className="App">
       <Paper className={classes.pagina}>
         <Grid container spacing={24}>
@@ -80,7 +85,7 @@ function App() {
           </Grid>
         </Grid>
       </Paper>
-    </div>
+    </div></ThemeProvider>
   );
 }
 export default App;

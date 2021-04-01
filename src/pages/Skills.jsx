@@ -5,8 +5,13 @@ import Grid from '@material-ui/core/Grid';
 import { Card } from '@material-ui/core';
 import CoursesSkills from './SkillsCourses.jsx';
 import Tilt from 'react-parallax-tilt';
-import GitAPI from '../pages/GitAPI.jsx'
-import SkillsErasmus from '../pages/SkillsErasmus.jsx'
+import GitAPI from '../pages/GitAPI.jsx';
+import SkillsErasmus from '../pages/SkillsErasmus.jsx';
+import Particles from 'react-particles-js';
+import particlesConfig from '../components/background.jsx';
+import Img from '../imgSkill.jpg';
+import SkillsHard from '../pages/SkillsHard.jsx'
+import { Typography } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
   root: {
     height: 180,
@@ -26,6 +31,14 @@ const useStyles = makeStyles((theme) => ({
     stroke: theme.palette.divider,
     strokeWidth: 1,
   },
+  pagina:{
+    width: "max-width",
+    backgroundImage: `url(${Img})`,
+    backgroundSize: "cover",
+display: "flex",
+flexDirection: "column",
+justifyContent: "center",
+  },
 }));
 
 export default function FullWidthGrid() {
@@ -38,17 +51,20 @@ export default function FullWidthGrid() {
       <br></br>
       <br></br>
       <br></br>
-      <Grid container spacing={0}  style={{ gap: 70 }} justify="center">
-
+      <Grid container style={{ gap: 70 }} justify="center">
+      <div style={{ position: 'absolute' }}>
+            <Particles height="100vh" width="70vw" params={particlesConfig} />
+          </div>
         <Tilt item xs={12} sm={6} >
           <div style={{ height: '300px', backgroundColor: 'white',width:'600px' }}>
-            <h1 align="center">Hard Skills</h1>
+          <h2 align="center">Skills</h2>
+            <SkillsHard />
           </div>
         </Tilt>
 
         <Tilt item xs={12} sm={6}>
           <div style={{ height: '300px', backgroundColor: 'white',width:'600px' }}>
-            <h1 align="center">Erasmus+</h1>
+            <h2 align="center">Erasmus+</h2>
             <SkillsErasmus />
           </div>
         </Tilt>
@@ -63,6 +79,7 @@ export default function FullWidthGrid() {
 
         <Tilt item xs={12} sm={6}>
           <div style={{ height: '300px', backgroundColor: 'white', width:'600px'}}>
+            <h2 align="center"> GitHub Repository</h2>
               <GitAPI />
           </div>
         </Tilt>

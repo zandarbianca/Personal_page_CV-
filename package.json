@@ -13,6 +13,8 @@
     "bootstrap": "^4.6.0",
     "rc-queue-anim": "^1.8.5",
     "react": "^17.0.2",
+    "react-animated-text": "^0.1.4",
+    "react-animated-typing": "^2.1.6",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.2",
     "react-parallax-tilt": "^1.4.96",
@@ -26,6 +28,7 @@
     "react-sticky": "^6.0.3",
     "react-stickynode": "^3.0.5",
     "react-typewriter-effect": "^1.0.2",
+    "react-typical": "^0.1.3",
     "use-dencrypt-effect": "^2.0.0-rc.1",
     "web-vitals": "^1.1.1"
   },

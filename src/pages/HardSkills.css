@@ -1,0 +1,42 @@
+*{
+    font-family:  sans-serif;
+    list-style: none;
+    padding: 0;
+}
+
+.skills{
+    width: 400px;
+    margin: 60px auto;
+    color: black;
+}
+.skills li{
+    margin: 20px 0;
+}
+
+.bar{
+    background:rgb(205, 206, 211);
+    display: block;
+    border: 1px solid rgba(47, 6, 53, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #a34bccb3;
+}
+
+.bar span{
+    height: 2px;
+    float: left;
+    background: #7a258f;
+}
+
+.cc{
+    width: 75%;
+}
+.sql{
+    width: 85%;
+}
+.js{
+    width: 50%;
+}
+.html{
+    width: 60%;
+}

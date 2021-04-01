@@ -61,10 +61,10 @@ export default function GitHubUser() {
             <ListItemAvatar align="center">
                 <Avatar style={{ width: 80, height: 80 }} />
             </ListItemAvatar>
-            <br></br>
-            <Typography variant="body1" align="center" >
+    
+            {/* <Typography variant="body1" align="center" >
                 GitHub Repository
-            </Typography>
+            </Typography> */}
 
             <List className={classes.root}>{listItems}</List>
 
